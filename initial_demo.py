@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
+
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
+
 
 # static data
 weekday_in_order = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
@@ -28,7 +30,7 @@ app.layout = html.Div(children=[
             # configure the data
             'data': [
                 # set x to be weekday, and y to be the counts. We use bars to represent our data.
-                {'x': weekday_in_order, 'y': counts_in_order, 'type': 'bar', 'name': 'Total'},
+                {'x': weekday_in_order, 'y': count_in_total, 'type': 'bar', 'name': 'Total'},
 
             ],
             # configure the layout of the visualization --
